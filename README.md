@@ -34,9 +34,3 @@ okay so here's what I'm thinking....
 Documentation for the DVIDS API:
 Access the tutorial https://api.dvidshub.net/docs/tutorial
 To use the search feature: https://api.dvidshub.net/docs/search_api
-
-For the DVIDS API to work,
-
-Google maps API:
-API Key:
-AIzaSyD3hf-2EcXEsLifm89qMd39dd6DuDPMlAo
