@@ -1,0 +1,2 @@
+### Get Repos
+GET https://api.dvidshub.net/auth/authorize?client_id=key-64110a1c518a9&redirect_uri=http://127.0.0.1:5500/Hackathon%20project%20with%20Google%20API/index.html&response_type=code&scope=basic%20email

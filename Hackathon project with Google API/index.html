@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="config.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+   
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Photo Map</title>
+</head>
+<body>
+    <h1>Where do our troops go?</h1>
+    <h2>This map displays a pin for places where our military operates, based off of visual information published by DOD PAOs via DVIDSHUB.NET </h2>
+    <div id="map"></div>
+     <div id="map"></div>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=INSERT_YOUR_API_KEY&callback=initMap&libraries=places&v=weekly"
+    defer
+    ></script>
+    <script>
+        function initMap() {
+          const myLatLng = { lat: 40.7128, lng: -74.006 };
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 10,
+            center: myLatLng,
+          });
+          new google.maps.Marker({
+            position: myLatLng,
+            map,
+            title: "Hello World!",
+          });
+        }
+      </script>
+</body>
+</html>
